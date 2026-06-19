@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aialarm.app/sitemap.xml

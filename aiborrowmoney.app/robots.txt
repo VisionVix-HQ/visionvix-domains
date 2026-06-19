@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aiborrowmoney.app/sitemap.xml

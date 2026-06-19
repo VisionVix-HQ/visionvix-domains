@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aiagentrouting.app/sitemap.xml

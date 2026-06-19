@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aibrandbuilder.app/sitemap.xml

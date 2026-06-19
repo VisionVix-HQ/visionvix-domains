@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aiagentmesh.app/sitemap.xml

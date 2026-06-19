@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aicaptiongenerator.app/sitemap.xml

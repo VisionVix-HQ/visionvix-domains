@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aibabyname.app/sitemap.xml
