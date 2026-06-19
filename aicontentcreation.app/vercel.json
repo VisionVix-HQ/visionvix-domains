@@ -1,32 +1,49 @@
-{
-  "framework": "nextjs",
-  "buildCommand": "next build",
+﻿{
   "headers": [
     {
-      "source": "/tool.html",
+      "source": "/(.*)",
       "headers": [
         {
-          "key": "Cache-Control",
-          "value": "no-cache, no-store, must-revalidate"
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self' https: 'unsafe-inline' 'unsafe-eval'; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' https:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
         },
         {
-          "key": "Pragma",
-          "value": "no-cache"
+          "key": "X-Frame-Options",
+          "value": "DENY"
         },
         {
-          "key": "Expires",
-          "value": "0"
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "key": "X-DNS-Prefetch-Control",
+          "value": "on"
         }
       ]
     },
     {
-      "source": "/",
+      "source": "/(.*)\\.(jpg|jpeg|png|gif|svg|webp|avif|ico|woff|woff2|ttf|otf|css|js)",
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "no-cache, no-store, must-revalidate"
+          "value": "public, max-age=31536000, immutable"
         }
       ]
-    }
-  ]
-}
+    },
+    {
+
+Get-ChildItem ".\accessibilityaudit.app" | Where-Object { $_.Name -eq "vercel.json" }
+
+q
