@@ -2,12 +2,11 @@
 
 source = r'C:\Users\visio\Desktop\Ready Landing Pages Domains\TO DEPLOY\deployed 19.6'
 dest = r'C:\Users\visio\Projects\visionivx-domains'
+
 ga_script = '<!-- Google Analytics -->\n<script async src="https://www.googletagmanager.com/gtag/js?id=G-HT0138DLZF"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag("js", new Date());\n  gtag("config", "G-HT0138DLZF");\n</script>'
 
-fix = '''
-<script>
+fix = '''<script>
 window.addEventListener("DOMContentLoaded", function() {
-  // Counter fix
   function animateCounter(el) {
     var target = parseFloat(el.dataset.target);
     var prefix = el.dataset.prefix || "";
@@ -25,27 +24,15 @@ window.addEventListener("DOMContentLoaded", function() {
     requestAnimationFrame(step);
   }
   document.querySelectorAll(".ks-val[data-target]").forEach(function(el) { animateCounter(el); });
-
-  // Chart fix - force draw immediately
   setTimeout(function() {
     var lineEl = document.getElementById("chartLine");
-    if (lineEl && lineEl.getTotalLength) {
-      try {
-        var len = lineEl.getTotalLength();
-        lineEl.style.strokeDasharray = len;
-        lineEl.style.strokeDashoffset = "0";
-        lineEl.style.transition = "none";
-      } catch(e) {}
+    if (lineEl) {
+      lineEl.style.strokeDashoffset = "0";
+      lineEl.style.transition = "none";
     }
-    // Also force area fill visible
-    var areaEl = document.getElementById("chartArea");
-    if (areaEl) areaEl.style.opacity = "1";
-    var dotEl = document.getElementById("chartDot");
-    if (dotEl) dotEl.style.opacity = "1";
-  }, 200);
+  }, 500);
 });
-</script>
-'''
+</script>'''
 
 for domain in os.listdir(source):
     src_file = os.path.join(source, domain, 'index.html')
@@ -58,10 +45,15 @@ for domain in os.listdir(source):
                 break
             except:
                 continue
+        # Inject GA before </head> only if not already there
         if 'G-HT0138DLZF' not in content:
-            content = content.replace('</head>', ga_script + '\n</head>')
-        content = re.sub(r'<!-- counter_fix_applied -->.*?</body>', '</body>', content, flags=re.DOTALL)
-        content = content.replace('</body>', fix + '\n<!-- fix_applied -->\n</body>')
+            content = content.replace('</head>', ga_script + '\n</head>', 1)
+        # Remove any previous fix attempts
+        content = re.sub(r'<script>\s*window\.addEventListener\("DOMContentLoaded".*?</script>\s*', '', content, flags=re.DOTALL)
+        # Replace LAST occurrence of </body>
+        idx = content.rfind('</body>')
+        if idx != -1:
+            content = content[:idx] + fix + '\n</body>' + content[idx+7:]
         with open(dst_file, 'w', encoding='utf-8') as f:
             f.write(content)
         print('OK: ' + domain)
