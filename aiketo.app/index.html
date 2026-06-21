@@ -2129,6 +2129,7 @@
                     '
 <script>
 window.addEventListener("DOMContentLoaded", function() {
+  // Counter fix
   function animateCounter(el) {
     var target = parseFloat(el.dataset.target);
     var prefix = el.dataset.prefix || "";
@@ -2145,13 +2146,29 @@ window.addEventListener("DOMContentLoaded", function() {
     }
     requestAnimationFrame(step);
   }
-  document.querySelectorAll(".ks-val[data-target]").forEach(function(el) {
-    animateCounter(el);
-  });
+  document.querySelectorAll(".ks-val[data-target]").forEach(function(el) { animateCounter(el); });
+
+  // Chart fix - force draw immediately
+  setTimeout(function() {
+    var lineEl = document.getElementById("chartLine");
+    if (lineEl && lineEl.getTotalLength) {
+      try {
+        var len = lineEl.getTotalLength();
+        lineEl.style.strokeDasharray = len;
+        lineEl.style.strokeDashoffset = "0";
+        lineEl.style.transition = "none";
+      } catch(e) {}
+    }
+    // Also force area fill visible
+    var areaEl = document.getElementById("chartArea");
+    if (areaEl) areaEl.style.opacity = "1";
+    var dotEl = document.getElementById("chartDot");
+    if (dotEl) dotEl.style.opacity = "1";
+  }, 200);
 });
 </script>
 
-<!-- counter_fix_applied -->
+<!-- fix_applied -->
 </body></html>'
                 ];
                 const html = parts.join('');
@@ -2466,6 +2483,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
 <script>
 window.addEventListener("DOMContentLoaded", function() {
+  // Counter fix
   function animateCounter(el) {
     var target = parseFloat(el.dataset.target);
     var prefix = el.dataset.prefix || "";
@@ -2482,12 +2500,28 @@ window.addEventListener("DOMContentLoaded", function() {
     }
     requestAnimationFrame(step);
   }
-  document.querySelectorAll(".ks-val[data-target]").forEach(function(el) {
-    animateCounter(el);
-  });
+  document.querySelectorAll(".ks-val[data-target]").forEach(function(el) { animateCounter(el); });
+
+  // Chart fix - force draw immediately
+  setTimeout(function() {
+    var lineEl = document.getElementById("chartLine");
+    if (lineEl && lineEl.getTotalLength) {
+      try {
+        var len = lineEl.getTotalLength();
+        lineEl.style.strokeDasharray = len;
+        lineEl.style.strokeDashoffset = "0";
+        lineEl.style.transition = "none";
+      } catch(e) {}
+    }
+    // Also force area fill visible
+    var areaEl = document.getElementById("chartArea");
+    if (areaEl) areaEl.style.opacity = "1";
+    var dotEl = document.getElementById("chartDot");
+    if (dotEl) dotEl.style.opacity = "1";
+  }, 200);
 });
 </script>
 
-<!-- counter_fix_applied -->
+<!-- fix_applied -->
 </body>
 </html>
