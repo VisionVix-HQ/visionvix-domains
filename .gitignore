@@ -16,3 +16,7 @@ Thumbs.db
 *.swp
 .idea/
 .vscode/
+
+gsc_credentials.json
+
+gsc_token.json
