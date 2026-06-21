@@ -8,8 +8,14 @@ for domain in os.listdir(source):
     src_file = os.path.join(source, domain, 'index.html')
     dst_file = os.path.join(dest, domain, 'index.html')
     if os.path.exists(src_file) and os.path.exists(os.path.join(dest, domain)):
-        with open(src_file, 'r', encoding='utf-8') as f:
-            content = f.read()
+        # Try cp1252 first, then utf-8
+        for enc in ['cp1252', 'utf-8', 'latin-1']:
+            try:
+                with open(src_file, 'r', encoding=enc) as f:
+                    content = f.read()
+                break
+            except:
+                continue
         if 'G-HT0138DLZF' not in content:
             content = content.replace('</head>', ga_script + '\n</head>')
         with open(dst_file, 'w', encoding='utf-8') as f:
