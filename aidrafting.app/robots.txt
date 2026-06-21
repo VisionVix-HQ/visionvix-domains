@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aidrafting.app/sitemap.xml

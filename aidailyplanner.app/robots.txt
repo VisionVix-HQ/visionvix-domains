@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aidailyplanner.app/sitemap.xml

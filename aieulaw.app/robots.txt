@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aieulaw.app/sitemap.xml

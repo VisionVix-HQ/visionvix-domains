@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ailoan.app/sitemap.xml

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aipodcaster.app/sitemap.xml

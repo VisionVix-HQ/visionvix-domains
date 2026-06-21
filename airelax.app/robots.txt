@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://airelax.app/sitemap.xml
