@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://blogtemplate.app/sitemap.xml

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aistocknews.app/sitemap.xml

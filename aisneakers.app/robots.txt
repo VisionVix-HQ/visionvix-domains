@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aisneakers.app/sitemap.xml

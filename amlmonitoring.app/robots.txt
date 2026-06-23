@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://amlmonitoring.app/sitemap.xml

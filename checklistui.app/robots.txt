@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://checklistui.app/sitemap.xml

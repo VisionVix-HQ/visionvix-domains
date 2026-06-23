@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://auditsite.app/sitemap.xml
