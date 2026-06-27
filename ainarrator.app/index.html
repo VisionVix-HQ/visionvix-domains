@@ -490,23 +490,6 @@
       "url": "https://ainarrator.app",
       "voice projectCategory": "BusinessVoice Project",
       "operatingSystem": "Any",
-      "image": "https://ainarrator.app/og.jpg",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "127"
-      },
-      "review": {
-        "@type": "Review",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5"
-        },
-        "author": {
-          "@type": "Person",
-          "name": "VisionVix User"
-        }
-      },
       "description": "Acquire ainarrator.app — exact-match AI narrator voiceover domain with optional marketing site and full AI MVP. GoDaddy escrow. From $4,200.",
       "offers": [
         {"@type": "Offer", "name": "Domain Only", "price": "5,500", "priceCurrency": "USD"},
@@ -2330,125 +2313,12 @@
     </div>
 </div>
 
-<script>
-    (function(){
-        const modal   = script.getElementById('contactModal');
-        const subEl   = script.getElementById('contactSub');
-        const mailto  = script.getElementById('contactMailto');
-        const copyBtn = script.getElementById('copyBtn');
-        const EMAIL   = 'domains@visionvix.com';
 
-        const subjects = {
-            'domain':   'Domain Only — ainarrator.app',
-            'site':     'Domain + Site + SEO — ainarrator.app',
-            'mvp':      'Full AI MVP Package — ainarrator.app',
-            'help':     'Help me choose — ainarrator.app',
-            'general':  'ainarrator.app enquiry'
-        };
-        const blurbs = {
-            'domain':  "Interested in acquiring the ainarrator.app domain? Email us — same-day response.",
-            'site':    "Interested in the Domain + Site + SEO package? Email us and we'll send full details.",
-            'mvp':     "Interested in the Full AI MVP package? Email us and we'll scope it with you.",
-            'help':    "Not sure which package fits? Email us and we'll recommend the right one.",
-            'general': "Email us about ainarrator.app and we'll get back to you the same day."
-        };
 
-        window.openContact = function(tier){
-            tier = tier || 'general';
-            subEl.textContent = blurbs[tier] || blurbs.general;
-            mailto.href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent(subjects[tier] || subjects.general);
-            modal.style.display = 'flex';
-            script.body.style.overflow = 'hidden';
-        };
-        window.closeContact = function(){
-            modal.style.display = 'none';
-            script.body.style.overflow = '';
-        };
-        window.copyContactEmail = function(){
-            navigator.clipboard.writeText(EMAIL).then(()=>{
-                copyBtn.textContent = 'Copied ✓';
-                setTimeout(()=>{ copyBtn.textContent = 'Copy'; }, 1800);
-            }).catch(()=>{
-                copyBtn.textContent = EMAIL;
-            });
-        };
-        script.getElementById('contactBackdrop').addEventListener('click', window.closeContact);
-        script.addEventListener('keydown', e=>{ if(e.key==='Escape') window.closeContact(); });
-    })();
-</script>
-
-<!-- ===== LEGAL MODAL (Privacy + Terms) ===== -->
-<div id="legalModal" style="display:none;position:fixed;inset:0;z-index:9999;align-items:center;justify-content:center;padding:20px;">
-    <div id="legalBackdrop" style="position:absolute;inset:0;background:rgba(8,9,14,.8);backdrop-filter:blur(6px);"></div>
-    <div style="position:relative;max-width:680px;width:100%;max-height:85vh;background:linear-gradient(145deg,#141414,#0d0e0e);border:1px solid #a8f53d40;border-radius:18px;box-shadow:0 32px 80px rgba(0,0,0,.6);display:flex;flex-direction:column;overflow:hidden;">
-        <!-- header -->
-        <div style="display:flex;align-items:center;justify-content:space-between;padding:24px 28px;border-bottom:1px solid var(--border);flex-shrink:0;">
-            <h3 id="legalTitle" style="font-size:20px;font-weight:700;color:#e8eaf0;">Privacy Policy</h3>
-            <button onclick="closeLegal()" style="width:32px;height:32px;border-radius:8px;background:#1a1a1a;border:1px solid var(--border);color:var(--text-muted);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .15s;" onmouseover="this.style.color='#e8eaf0';this.style.borderColor='var(--teal)'" onmouseout="this.style.color='var(--text-muted)';this.style.borderColor='var(--border)'">×</button>
-        </div>
-        <!-- body -->
-        <div id="legalBody" style="padding:24px 28px;overflow-y:auto;font-size:14px;line-height:1.7;color:var(--text-secondary);"></div>
-    </div>
-</div>
-
-<script>
-    (function(){
-        const modal = script.getElementById('legalModal');
-        const title = script.getElementById('legalTitle');
-        const body  = script.getElementById('legalBody');
-        const today = 'June 2026';
-
-        const PRIVACY = `
-            <p style="color:var(--text-muted);margin-bottom:18px;">Last updated: ${today}</p>
-            <p style="margin-bottom:16px;">This website is opequality scored by <strong style="color:#e8eaf0;">VisionVix</strong>, a brand of <strong style="color:#e8eaf0;">TheTechBrain LTD</strong> (United Kingdom). We respect your privacy and keep data collection to the minimum needed to respond to enquiries and opequality score this page.</p>
-            <h4 style="color:#e8eaf0;font-size:15px;margin:20px 0 8px;">What we collect</h4>
-            <p style="margin-bottom:16px;">When you contact us by email, we receive the email address and any details you choose to send. We do not require account creation, and we do not sell or share your information with third parties.</p>
-            <h4 style="color:#e8eaf0;font-size:15px;margin:20px 0 8px;">Analytics</h4>
-            <p style="margin-bottom:16px;">We use Google Analytics (GA4) to understand which pages are viewed and how visitors interact with the site. This data is aggregated and does not identify you personally. No advertising trackers or cross-site tracking cookies are used.</p>
-            <h4 style="color:#e8eaf0;font-size:15px;margin:20px 0 8px;">Cookies</h4>
-            <p style="margin-bottom:16px;">This page does not set advertising or cross-site tracking cookies.</p>
-            <h4 style="color:#e8eaf0;font-size:15px;margin:20px 0 8px;">Your rights</h4>
-            <p style="margin-bottom:16px;">Under UK GDPR you may request access to, correction of, or deletion of any personal data we hold about you. To make a request, email <a href="mailto:domains@visionvix.com" style="color:var(--teal);text-decoration:none;">domains@visionvix.com</a>.</p>
-            <h4 style="color:#e8eaf0;font-size:15px;margin:20px 0 8px;">Contact</h4>
-            <p>Questions about this policy? Email <a href="mailto:domains@visionvix.com" style="color:var(--teal);text-decoration:none;">domains@visionvix.com</a>.</p>
-        `;
-
-        const TERMS = `
-            <p style="color:var(--text-muted);margin-bottom:18px;">Last updated: ${today}</p>
-            <p style="margin-bottom:16px;">These terms govern the sale and transfer of this domain and any associated packages offered on this page by <strong style="color:#e8eaf0;">VisionVix</strong>, a brand of <strong style="color:#e8eaf0;">TheTechBrain LTD</strong> (United Kingdom).</p>
-            <h4 style="color:#e8eaf0;font-size:15px;margin:20px 0 8px;">1. What is offered</h4>
-            <p style="margin-bottom:16px;">Three packages are available: the domain only; the domain with a marketing site and SEO setup; and the full package including a working AI voice project. Exact deliverables are confirmed in AI language narration advising before purchase.</p>
-            <h4 style="color:#e8eaf0;font-size:15px;margin:20px 0 8px;">2. Escrow &amp; workflow</h4>
-            <p style="margin-bottom:16px;">Domain transfers are handled through GoDaddy escrow or an equivalent reputable escrow service. Funds are released to the seller once the domain transfer is confirmed. Lease-to-own arrangements follow the registrar's standard terms; the domain transfers to the buyer upon completion of all workflows.</p>
-            <h4 style="color:#e8eaf0;font-size:15px;margin:20px 0 8px;">3. Single ownership</h4>
-            <p style="margin-bottom:16px;">Each domain is sold once, in full, to a single buyer. Domains may also be listed on third-party registrar networks; the first committed buyer through escrow secures the asset.</p>
-            <h4 style="color:#e8eaf0;font-size:15px;margin:20px 0 8px;">4. Site &amp; app packages</h4>
-            <p style="margin-bottom:16px;">For site and AI-voice project packages, source code, scriptation, and full commercial rights transfer to the buyer on completion. Support periods (where stated, e.g. 90 days) cover setup, deployment, and basic customisation.</p>
-            <h4 style="color:#e8eaf0;font-size:15px;margin:20px 0 8px;">5. Refunds</h4>
-            <p style="margin-bottom:16px;">Because a domain transfer is irreversible once completed, sales are final after transfer. Any deposit terms are agreed in AI language narration advising before workflow.</p>
-            <h4 style="color:#e8eaf0;font-size:15px;margin:20px 0 8px;">6. Contact</h4>
-            <p>For any questions about a purchase, email <a href="mailto:domains@visionvix.com" style="color:var(--teal);text-decoration:none;">domains@visionvix.com</a>.</p>
-        `;
-
-        window.openLegal = function(which){
-            if(which === 'terms'){ title.textContent = 'Terms of Sale'; body.innerHTML = TERMS; }
-            else { title.textContent = 'Privacy Policy'; body.innerHTML = PRIVACY; }
-            body.scrollTop = 0;
-            modal.style.display = 'flex';
-            script.body.style.overflow = 'hidden';
-        };
-        window.closeLegal = function(){
-            modal.style.display = 'none';
-            script.body.style.overflow = '';
-        };
-        script.getElementById('legalBackdrop').addEventListener('click', window.closeLegal);
-        script.addEventListener('keydown', e=>{ if(e.key==='Escape') window.closeLegal(); });
-    })();
-</script>
 
 
 <script>
-window.addEventListener("DOMContentLoaded", function() {
+(function(){
   function animateCounter(el) {
     var target = parseFloat(el.dataset.target);
     var prefix = el.dataset.prefix || "";
@@ -2465,15 +2335,25 @@ window.addEventListener("DOMContentLoaded", function() {
     }
     requestAnimationFrame(step);
   }
-  document.querySelectorAll(".ks-val[data-target]").forEach(function(el) { animateCounter(el); });
-  setTimeout(function() {
-    var lineEl = document.getElementById("chartLine");
-    if (lineEl) {
-      lineEl.style.strokeDashoffset = "0";
-      lineEl.style.transition = "none";
-    }
-  }, 500);
-});
+  function runFix() {
+    document.querySelectorAll(".ks-val[data-target]").forEach(function(el) { animateCounter(el); });
+    setTimeout(function() {
+      var lineEl = document.getElementById("chartLine");
+      if (lineEl) {
+        lineEl.style.opacity = "1";
+      }
+      var areaEl = document.getElementById("chartArea");
+      if (areaEl) areaEl.style.opacity = "1";
+      var dotEl = document.getElementById("chartDot");
+      if (dotEl) dotEl.style.opacity = "1";
+    }, 1000);
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", runFix);
+  } else {
+    runFix();
+  }
+})();
 </script>
 </body>
 </html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fixseo.app/sitemap.xml

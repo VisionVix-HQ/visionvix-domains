@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://learnblogging.app/sitemap.xml

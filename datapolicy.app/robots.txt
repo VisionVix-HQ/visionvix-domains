@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://datapolicy.app/sitemap.xml

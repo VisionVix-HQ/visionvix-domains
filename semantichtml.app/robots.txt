@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://semantichtml.app/sitemap.xml

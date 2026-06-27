@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mcpendpoint.app/sitemap.xml

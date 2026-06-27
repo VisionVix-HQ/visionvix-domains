@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://forexbot.app/sitemap.xml

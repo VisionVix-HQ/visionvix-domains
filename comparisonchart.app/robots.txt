@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://comparisonchart.app/sitemap.xml

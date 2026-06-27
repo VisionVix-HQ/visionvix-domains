@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mvptesting.app/sitemap.xml

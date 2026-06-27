@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://foodwaste.app/sitemap.xml

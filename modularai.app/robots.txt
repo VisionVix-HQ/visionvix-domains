@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://modularai.app/sitemap.xml

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nftvaluation.app/sitemap.xml

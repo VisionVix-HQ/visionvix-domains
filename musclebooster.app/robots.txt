@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://musclebooster.app/sitemap.xml

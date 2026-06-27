@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://htmltoimage.app/sitemap.xml

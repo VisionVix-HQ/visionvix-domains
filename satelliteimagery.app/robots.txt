@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://satelliteimagery.app/sitemap.xml

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://financeautomation.app/sitemap.xml

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://semanticai.app/sitemap.xml

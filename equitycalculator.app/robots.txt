@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://equitycalculator.app/sitemap.xml

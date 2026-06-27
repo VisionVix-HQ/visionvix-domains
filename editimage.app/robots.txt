@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://editimage.app/sitemap.xml

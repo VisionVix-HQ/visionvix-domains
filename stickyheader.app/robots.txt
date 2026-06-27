@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://stickyheader.app/sitemap.xml

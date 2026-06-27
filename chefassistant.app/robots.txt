@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://chefassistant.app/sitemap.xml

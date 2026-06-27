@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://legalsoftware.app/sitemap.xml

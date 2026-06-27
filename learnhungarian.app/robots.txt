@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://learnhungarian.app/sitemap.xml

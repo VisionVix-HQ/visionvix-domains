@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mindsetcoaching.app/sitemap.xml

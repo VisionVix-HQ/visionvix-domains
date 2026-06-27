@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mcpinterface.app/sitemap.xml

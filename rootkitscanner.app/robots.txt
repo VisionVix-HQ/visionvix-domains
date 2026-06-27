@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rootkitscanner.app/sitemap.xml

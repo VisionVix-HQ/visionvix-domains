@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://onlinereputation.app/sitemap.xml

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://reconscanner.app/sitemap.xml

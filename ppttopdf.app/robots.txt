@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ppttopdf.app/sitemap.xml

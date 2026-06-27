@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://seoranking.app/sitemap.xml

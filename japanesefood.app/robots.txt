@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://japanesefood.app/sitemap.xml

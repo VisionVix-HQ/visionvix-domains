@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://iotgateway.app/sitemap.xml

@@ -1,0 +1,25 @@
+{
+  "name": "keyloggerdetector.app",
+  "short_name": "Keylogger Detector",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#a8f53d",
+  "background_color": "#0d0e0e",
+  "display": "standalone",
+  "description": "AI keylogger detector domain and startup-in-a-box by VisionVix."
+}

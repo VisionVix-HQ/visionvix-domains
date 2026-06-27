@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://designlayout.app/sitemap.xml

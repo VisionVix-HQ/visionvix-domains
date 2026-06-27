@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://keyloggerdetector.app/sitemap.xml

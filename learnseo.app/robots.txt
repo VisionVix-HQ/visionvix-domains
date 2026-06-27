@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://learnseo.app/sitemap.xml
