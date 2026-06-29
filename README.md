@@ -4,7 +4,8 @@
 
 Every folder is a domain. Every domain is a live landing page. One PowerShell script deploys them all — Vercel + GoDaddy API, no manual steps.
 
-→ **Browse & buy domains at [visionvix.app](https://visionvix.app)**
+→ **Browse & buy domains at [visionvix.com/domain-sales](https://visionvix.com/domain-sales)**
+→ **Domain statistics at [visionvix.com/domain-statistics](https://visionvix.com/domain-statistics)**
 
 ---
 
@@ -20,7 +21,7 @@ Every folder is a domain. Every domain is a live landing page. One PowerShell sc
 
 ---
 
-## How it worksvisionvix-domains/
+## How it works visionvix-domains/
 
 ├── deploy.ps1                ← one script deploys everything
 
