@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://travelassistant.app/sitemap.xml

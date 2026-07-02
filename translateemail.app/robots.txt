@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://translateemail.app/sitemap.xml

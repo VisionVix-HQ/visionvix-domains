@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://taxestimator.app/sitemap.xml

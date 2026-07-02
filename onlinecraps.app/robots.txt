@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://onlinecraps.app/sitemap.xml

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://agreementgenerator.app/sitemap.xml

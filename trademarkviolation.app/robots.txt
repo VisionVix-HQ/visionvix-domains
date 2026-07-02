@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://trademarkviolation.app/sitemap.xml

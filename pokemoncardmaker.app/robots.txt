@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pokemoncardmaker.app/sitemap.xml

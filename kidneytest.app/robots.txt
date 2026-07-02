@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kidneytest.app/sitemap.xml

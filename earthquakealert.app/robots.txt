@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://earthquakealert.app/sitemap.xml

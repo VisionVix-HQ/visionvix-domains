@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ndagenerator.app/sitemap.xml

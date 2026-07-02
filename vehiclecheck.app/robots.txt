@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vehiclecheck.app/sitemap.xml

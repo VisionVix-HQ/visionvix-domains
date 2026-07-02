@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://xlsxtopdf.app/sitemap.xml

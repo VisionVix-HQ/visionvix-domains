@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://robotschecker.app/sitemap.xml

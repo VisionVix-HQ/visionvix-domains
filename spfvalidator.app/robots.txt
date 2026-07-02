@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://spfvalidator.app/sitemap.xml

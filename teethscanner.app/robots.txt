@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://teethscanner.app/sitemap.xml

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vpnchecker.app/sitemap.xml

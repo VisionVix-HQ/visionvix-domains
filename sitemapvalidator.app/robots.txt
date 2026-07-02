@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sitemapvalidator.app/sitemap.xml

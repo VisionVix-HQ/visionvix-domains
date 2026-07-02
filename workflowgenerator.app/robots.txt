@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://workflowgenerator.app/sitemap.xml

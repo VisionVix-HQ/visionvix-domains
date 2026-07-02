@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://slogangenerator.app/sitemap.xml

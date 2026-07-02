@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://onlineblackjack.app/sitemap.xml

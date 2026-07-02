@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cryptoblackjack.app/sitemap.xml

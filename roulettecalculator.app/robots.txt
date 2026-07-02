@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://roulettecalculator.app/sitemap.xml

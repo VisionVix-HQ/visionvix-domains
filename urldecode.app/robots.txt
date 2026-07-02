@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://urldecode.app/sitemap.xml

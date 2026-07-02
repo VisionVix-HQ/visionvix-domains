@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://txttohtml.app/sitemap.xml
